@@ -1,0 +1,439 @@
+:root{
+     --primario:#101828;
+     --segundario:#D92B75;
+     --blanco:#FFFFFF;
+}
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0%; 
+  padding: 0%;
+   font-size: 62,5%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body{
+  font-size: 1,6rem;
+  font-weight: 500;
+}
+section,header{background-color: var(--primario);}
+.center{display: flex; justify-content: center;}
+.margen{
+padding: 1rem 2rem;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.logo {
+  max-width: 2rem;
+  margin-right: 1rem;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+
+a{  text-decoration: none;
+  color: #ffffff;}
+.nav-list li a {
+  text-decoration: none;
+  color: #ffffff;
+  border-bottom: 2px solid;
+}
+
+.abrir-menu,
+.cerrar-menu {
+  display: none;
+}
+/* section main */
+.main{
+  background-image: url(../img/svg-gobbler\ \(1\).svg);
+  background-size: cover;
+  background-position: center ;
+  height: 60rem;
+  display: flex;
+  align-items: center;}
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+/* div nombre */
+.txt{
+border-bottom: solid var(--blanco) 2px;
+margin-bottom: 1rem;
+}
+.nombre_2,.nombre_1,.tl{
+  font-size: 8rem;
+  margin: 0%;
+  font-weight: 500;
+  font-family: 'League Gothic', sans-serif;
+
+  display: flex;
+  background: linear-gradient(44.85deg,#7a5af8 0%,#f63d68 94.38%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0,0,0,0);
+  color: #f1408a;
+  font-size: 10rem;
+}
+p{
+  display: inline;
+  font-size: 1.5rem;
+  margin: 0%;
+  color:var(--blanco) ;
+}
+/*btones main */
+.btn_proyectos_main,.btn_proyectos_main_2{
+  padding: 8px 8px;
+  border: solid  2px var(--blanco);
+  background-color: var(--segundario);
+  margin-left: .5rem;
+}
+.btn_proyectos_main{background-color: #101828;}
+/* section 'sobre mi' */
+.sobre_mi{
+  display: flex;
+  justify-content: center;
+  gap: 7rem;
+} 
+
+.txt_sm{
+  display: flex;
+  align-items:center ;
+  flex-direction: column;
+  text-align: center;
+  max-width: 30rem;
+}
+.titulo{
+  font-size:3rem;
+  margin: 1rem;
+  color:var(--blanco) ;
+}
+.parrafo{font-size: 1.3rem;}
+
+.tarjeta{
+  padding: 3rem 4rem;
+  background-color: antiquewhite;
+  position: relative;
+  background: white;
+  display: flex;
+  flex-direction: column;
+
+  /* Use  your own styles here */
+  width:500px;
+  height: 500px; 
+  margin-left: 8rem;
+  margin-bottom: 3rem;
+  box-shadow: rgb(217, 43, 117) -27px 20px 0px 0px;
+}
+
+/* contenido tarjeta */
+img{
+  width: 11rem;
+}
+.info{display: flex; flex-direction: column; text-align: center; }
+.icon{width: 5rem;}
+
+.icon_texto{ 
+  font-size: 3rem; 
+  margin-top: 1rem;
+  display: flex; 
+  justify-content: center; 
+}
+.grid-trajeta{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2,1fr);
+
+}
+/* separador */
+.separador{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background-color:var(--primario);
+}
+.separador:after{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background-color:var(--blanco);
+  transform-origin: top right;
+  transform: skewY(-2deg);
+}
+.separador_2{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background-color:var(--blanco);
+}
+.separador_2:after{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background-color:var(--primario);
+  transform-origin: top right;
+  transform: skewY(-3deg);
+}
+
+/* areas */
+.areas-dominadas{
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--blanco);
+  padding-top: 5rem;
+  margin-bottom: 5rem;
+}
+.areas-dominadas p{
+  color: var(--primario);
+  color: #101828;
+  font-weight: 500;
+  font-size: 1.5;
+  
+}
+.logo-areas{
+  width: 5rem;
+  height: 5rem;}
+.area {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  border: #3838386b solid 3px;
+  max-width: 200px;
+  max-height: 210px;
+}
+/* hover areas */
+.area:hover{
+  box-shadow: 5px 5px 20px;
+  transform: translateY(-3%);
+  }
+.contenedor-titulo{
+  background-color: var(--blanco);
+  color: var(--primario);
+  margin: 0%;
+  padding-top: 3.5rem;
+  display: flex;
+  justify-content: center;
+}
+.tl{margin: 0%;
+font-size: 5rem;}
+
+
+/*  section portafolio */
+.portafolio{
+     background-color: var(--primario);
+     padding-top: 10rem;
+}
+.contenedor-titulo-2{
+  background-color: var(--primario);
+  padding-top: 3rem;
+}
+.proyectos{
+  display: flex;
+  flex-direction: column;
+}
+.proyecto_img{
+  width: 15rem;
+  height: 8rem;
+  border-radius: 10px;
+}
+
+.contenedor-proyectos{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(5,1fr);
+  gap: 3rem;
+  margin-top: 4rem;
+}
+ 
+
+
+
+/* ------------------------------------------------------------------- */
+
+@media screen and (max-width: 1280px) {
+  .txt_main{
+    text-align: center;
+    max-width: 27rem;
+    max-height: 20rem ; 
+  } 
+  .nombre_2,.nombre_1{
+    margin: 0%;
+    color:var(--blanco) ;
+    
+  }
+  p{
+    display: inline;
+
+    margin: 0%;
+    color:var(--blanco) ;
+  }
+  .sobre_mi{  
+  display: flex;
+  }
+  .tarjeta {
+    margin-left: 0rem;
+    width:300px;
+    height: 500px; 
+  }
+  .contenedor-proyectos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(5,1fr);
+    gap: 3rem;
+    margin-top: 4rem;
+  }
+}
+@media screen and (max-width: 950px) {
+  /* menu de navegacion */
+  .abrir-menu,.cerrar-menu {
+      display: block;
+      border: 0;
+      font-size: 1.25rem;
+      background-color: transparent;
+      cursor: pointer;
+  }
+ 
+  .abrir-menu {
+      color: #ffffff;
+  }
+
+  .cerrar-menu {
+      color: #ececec;
+  }
+
+  .nav {
+      opacity: 0;
+      visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      gap: 1rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #1c1c1c;
+      padding: 2rem;
+      box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+  }
+
+  .nav.visible {
+      opacity: 1;
+      visibility: visible;
+      z-index: 900;
+  }
+  
+  .nav-list {
+      flex-direction: column;
+      align-items: end;
+  }
+
+  .nav-list li a {
+      color: #ecececec;
+  }
+  /* section */
+  .main{
+    background-position: top;
+  }
+  .txt_main{
+    text-align:left;
+    max-width: 27rem;
+    max-height: 20rem ; 
+  }
+  .nombre_2,.nombre_1{
+    margin: 0%;
+    color:var(--blanco) ;
+  }
+  p{
+    display: inline;
+    margin: 0%;
+    color:var(--blanco) ;
+  }
+  /* sobre mi */
+  .sobre_mi{
+    display:flex;
+    flex-direction:column-reverse;
+  }
+  .tarjeta{  
+    margin-top: 5rem;
+    margin-bottom: 0rem;
+    width:500px;
+    height: 500px; }
+  .contenedor-proyectos{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width: 700px) {
+  .main{
+    background-position: top;
+    align-items: start;
+    height: 30rem;
+  }
+  .txt_main{
+    text-align:left;
+    max-width: 20rem;
+    max-height: 20rem ; 
+  }
+  .nombre_2,.nombre_1{
+    margin-right: 2rem;
+    
+    color:var(--blanco) ;
+ 
+    font-size: 7rem;
+  }
+  .txt{border-bottom: 0px;}
+  p{
+    display: inline;
+    margin: 0%;
+    color:var(--blanco) ;
+  }
+  .areas-dominadas{
+      display: grid;
+      /* padding: 1.5rem 8rem; */
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat(2,1fr);
+      row-gap: 1rem;
+      column-gap:1rem ;
+      padding-left:1rem ;
+  }
+  .tl{margin: 0%;
+    font-size: 5rem;}
+  .center-2{
+    background-color: var(--blanco); 
+    display: flex; 
+    justify-content: center;}
+  .areas-dominadas{
+    margin-bottom: 3rem;
+    } 
+}
+@media screen and (max-width: 550px) {
+  .proyecto_img{
+    width: 10rem;
+    height: 6rem;
+    border-radius: 5px;
+  }
+  .tl{padding-top: 0%;}
+}
+@media screen and (max-width: 390px) {
+  .proyecto_img{
+    width: 8rem;
+    height: 6rem;
+    border-radius: 5px;
+  }
+  .tl{padding-top: 0%;}
+}
+
